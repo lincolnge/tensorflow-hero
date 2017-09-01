@@ -4,7 +4,7 @@ import shutil
 import cv2
 
 # hero list
-heros = ['zhongwuyan']
+heros = ['ake']
 
 for hero in heros:
     path = '/Users/suclogger/Downloads/' + hero + '/'
