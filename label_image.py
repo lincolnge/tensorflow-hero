@@ -1,3 +1,4 @@
+# coding: utf-8
 import tensorflow as tf
 import cv2
 from datetime import datetime
@@ -47,7 +48,6 @@ def judge_shape(image_path):
                 score = predictions[0][node_id]
                 predictResult.append(Predict(human_string, score))
                 print('%s (score = %.5f)' % (human_string, score))
-        # 释放
         mutex.release()
         return predictResult
 
